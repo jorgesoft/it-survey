@@ -3,6 +3,9 @@ name: CD
 on:
   push:
     branches: [ "master" ]
+    
+env:
+  CI: false
 
 jobs:
   s3_deployment:
